@@ -1,0 +1,32 @@
+
+
+# Treat all text files as UTF-8 and normalize line endings
+* text=auto
+
+# Kotlin and Java files - always use LF line endings
+*.kt text eol=lf
+*.java text eol=lf
+
+
+# XML and resource files - normalize as well
+*.xml text eol=lf
+*.json text eol=lf
+*.gradle text eol=lf
+
+# Images - treat as binary (no diffing)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+
+
+
+
+# Font files - treat as binary
+*.ttf binary
+*.otf binary
+
+# Ignore local changes to gradle wrapper files
+gradlew linguist-vendored
+gradlew.bat linguist-vendored
